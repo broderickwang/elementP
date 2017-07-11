@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.xuanqi.he.o2omvp">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- Dangerous Permissions -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!-- Dangerous Permissions -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <!-- Dangerous Permissions -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <!-- Dangerous Permissions -->
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <!-- Dangerous Permissions -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <!-- Dangerous Permissions -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <!-- Dangerous Permissions -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- Dangerous Permissions -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <application
+        android:name=".activity.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="gIrWBXoF5wHLiS1rkkc0VGetOo5vID2p"/>
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote">
+        </service>
+
+        <activity android:name=".activity.main.MainActivity"/>
+        <activity android:name=".activity.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.register.RegisterActivity"/>
+        <activity android:name=".activity.login.LoginActivity"/>
+        <activity android:name=".activity.findpassword.FindPasswordActivity"/>
+        <activity android:name=".modlues.main.activity.BusinessmenActivity"/>
+        <activity android:name=".modlues.main.activity.search.SearchActivity"/>
+        <activity android:name=".modlues.personal.activity.accountrecharge.AccountRechargeActivity"/>
+        <activity android:name=".modlues.personal.activity.bindphonenumber.BindPhoneNumberActivity"/>
+        <activity android:name=".modlues.personal.activity.accountsettings.AccountSettingsActivity"/>
+        <activity android:name=".modlues.personal.activity.modifyloginpassword.ModifyLoginPasswordActivity"/>
+        <activity android:name=".modlues.personal.activity.myfriend.MyFriendActivity"/>
+        <activity android:name=".modlues.personal.activity.usercertification.UserCertificationActivity"/>
+        <activity android:name=".modlues.personal.activity.settingpaymentpassword.SettingPaymentPasswordActivity"/>
+        <activity android:name=".modlues.personal.activity.mywallet.MyWalletActivity"/>
+        <activity android:name=".modlues.personal.activity.settingcenter.SettingCenterActivity"/>
+        <activity android:name=".modlues.personal.activity.SearchFriendActivity"/>
+        <activity android:name=".modlues.personal.activity.rechargerecord.RechargeRecordActivity"/>
+        <activity android:name=".modlues.main.activity.submitorder.SubmitOrderActivity"/>
+        <activity android:name=".modlues.personal.activity.TaskOrderActivity">
+        </activity>
+        <activity android:name=".modlues.personal.activity.MyOrderActivity">
+        </activity>
+        <activity android:name=".modlues.personal.activity.orderdetails.OrderDetailsActivity"/>
+        <activity android:name=".modlues.personal.activity.orderevaluation.OrderEvaluationActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+    </application>
+
+</manifest>

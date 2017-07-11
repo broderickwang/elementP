@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="iv_image_show_picker_del" type="id" />
+    <item name="iv_image_show_picker_pic" type="id" />
+    
+    <item name="btn_after_sale" type="id"/>
+    <item name="btn_evaluation" type="id"/>
+    <item name="btn_buy_again" type="id"/>
+    <item name="btn_view_logistics" type="id"/>
+    <item name="btn_immediate_payment" type="id"/>
+</resources>

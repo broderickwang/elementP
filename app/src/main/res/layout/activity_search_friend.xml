@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_search_friend"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context=".modlues.personal.activity.SearchFriendActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_search_box"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@color/toolbar_color">
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_back" />
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜索"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:layout_alignParentRight="true" />
+        <EditText
+            android:id="@+id/edit_search"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_centerInParent="true"
+            android:drawableLeft="@mipmap/icon_search"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:hint="请输入用户昵称"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textSize="14sp"
+            android:cursorVisible="false"
+            android:gravity="center_vertical"
+            android:textColorHint="@color/light_gray"
+            android:textColor="@color/light_text_color"
+            android:background="@drawable/solid_white_shape"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_search_box"
+        android:background="@color/white">
+        <com.xuanqi.he.o2omvp.widget.imageshow.ImageShowPickerView
+            android:id="@+id/image_show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></com.xuanqi.he.o2omvp.widget.imageshow.ImageShowPickerView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CONTENT"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_animation_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <include layout="@layout/tool_bar"/>
+        <RelativeLayout
+            android:id="@+id/rl_color_box"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:background="@color/rect_back_color">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/icon_back" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="搜索"
+                android:layout_centerVertical="true"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:layout_alignParentRight="true" />
+            <TextView
+                android:id="@+id/tv_false_search"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@mipmap/icon_search"
+                android:text="请输入用户昵称"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textSize="14sp"
+                android:gravity="center_vertical"
+                android:textColor="@color/light_gray"
+                android:background="@drawable/solid_white_shape"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

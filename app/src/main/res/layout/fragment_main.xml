@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.xuanqi.he.o2omvp.widget.recycler.LoadRefreshRecyclerView
+        android:id="@+id/m_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.xuanqi.he.o2omvp.widget.recycler.LoadRefreshRecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/rl_header_cover"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/toolbar_color"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/input_white_shape"
+            android:drawableLeft="@mipmap/icon_search"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="输入商家、商品名称"
+            android:textColor="@color/light_gray"
+            android:textSize="14sp"/>
+    </RelativeLayout>
+    <!--<FrameLayout-->
+    <!--android:id="@+id/fl_cart_layout"-->
+    <!--android:layout_width="45dp"-->
+    <!--android:layout_height="45dp"-->
+    <!--android:layout_margin="10dp"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:clickable="true"-->
+    <!--android:background="@drawable/main_cart_layer">-->
+    <!--<ImageView-->
+    <!--android:layout_width="30dp"-->
+    <!--android:layout_height="30dp"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:src="@mipmap/icon_car"/>-->
+    <!--</FrameLayout>-->
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fl_cart_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@mipmap/icon_car"
+        app:backgroundTint="#ff87ffeb"
+        app:borderWidth="0dp"
+        app:elevation="6dp"
+        app:pressedTranslationZ="12dp"
+        app:rippleColor="#33728dff"/>
+</RelativeLayout>

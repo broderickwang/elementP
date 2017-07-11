@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:text="孜然羊肉"
+        android:textSize="13sp"
+        android:textColor="@color/light_text_color"/>
+    <TextView
+        android:id="@+id/item_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00.00"
+        android:layout_gravity="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/red"/>
+    <Space
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"/>
+    <com.xuanqi.he.o2omvp.widget.ShoppingView
+        android:id="@+id/shopping_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:sv_bg_color="@color/toolbar_color"
+        app:sv_duration="200"
+        app:sv_text_size="13sp"/>
+</LinearLayout>
